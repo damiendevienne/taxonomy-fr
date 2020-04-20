@@ -6,6 +6,7 @@ The aim of this repository is to propose an up-to-date correspondance between la
 # Data sources and retrieval strategies
 
 For now, three sources of data are used. Here is the Venn diagram representing the content of each data source (in ters of taxa with vernacular name in French) and their overlap. 
+
 ![venn diagram taxonomy comparison FR](img/venn.png)
 
 **1. Wikidata**
