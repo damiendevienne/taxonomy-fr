@@ -32,7 +32,8 @@ From there, you can retrieve a file called :
 `VernacularName.tsv`
 and another one called 
 `Taxon.tsv`
-From there you can make the correct file 
+
+**Alltogether, in the latest release of GBIF Backbone, this gives you vernacular names for 33359 species**
 
 
 
