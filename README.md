@@ -9,14 +9,10 @@ The aim of this repository is to propose an up-to-date correspondance between la
 
 Wikidata is a great resource for species names translation. The following code (Sparkle) can be used to retrieve the common names of taxons in french. Simply copy-paste it here: [https://query.wikidata.org](https://query.wikidata.org/) 
 ```
-SELECT DISTINCT ?sci ?comm ?link WHERE {
+SELECT DISTINCT ?sci ?comm WHERE {
   ?taxon wdt:P31 wd:Q16521;
     wdt:P225 ?sci;
     wdt:P1843 ?comm.
-  OPTIONAL {
-    ?link schema:about ?taxon;
-    schema:isPartOf <https://fr.wikipedia.org/>.
-  }
   FILTER(LANGMATCHES(LANG(?comm), "fr"))
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
 } 
