@@ -7,7 +7,8 @@ The aim of this repository is to propose an up-to-date correspondance between la
 **1. Wikidata**
 
 
-Wikidata is a great resource for species names translation. The following code (Sparkle) can be used to retrieve the common names of taxons in french. Simply copy-paste it here: [https://query.wikidata.org](https://query.wikidata.org/) 
+Wikidata is a great resource for species names translation. The following code (Sparkle) can be used to retrieve the common names of taxons in french, using the online service [https://query.wikidata.org](https://query.wikidata.org/).
+
 ```
 SELECT DISTINCT ?sci ?comm WHERE {
   ?taxon wdt:P31 wd:Q16521;
@@ -17,7 +18,10 @@ SELECT DISTINCT ?sci ?comm WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
 } 
 ```
-> This allows retrieving 24049 common names (as of April, 19 2020) covering xxxxx unique taxa	
+
+
+The downloaded result (tsv format) is called `query.tsv`
+> Vernacular names for 18955 taxa (April 20th, 2020)
 
 **2. GBIF**
 
@@ -37,7 +41,7 @@ The INPN is a great resource for species names of species living in France (but 
 
 The important file here is `TAXREFvXX.txt` where XX is the current version.
 
-> Vernacular names for 114194 taxa (April 20th, 2020; TAXREFv13)
+> Vernacular names for 114193 taxa (April 20th, 2020; TAXREFv13)
 
 
 
