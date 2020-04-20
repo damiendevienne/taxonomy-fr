@@ -43,6 +43,8 @@ and another one called
 
 The INPN is a great resource for species names of species living in France (but not the others). The complete data can be downloaded from https://inpn.mnhn.fr/docs-web/docs/download/301786
 
+> Vernacular names for 114194 taxa (April 20th, 2020; TAXREFv13)
+
 
 
 
