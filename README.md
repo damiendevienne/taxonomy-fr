@@ -21,7 +21,7 @@ SELECT DISTINCT ?sci ?comm ?link WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
 } 
 ```
-This allows retrieving 24049 common names (as of April, 19 2020) covering xxxxx unique taxa	
+> This allows retrieving 24049 common names (as of April, 19 2020) covering xxxxx unique taxa	
 
 **2. GBIF**
 
