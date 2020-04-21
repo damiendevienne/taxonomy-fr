@@ -3,8 +3,9 @@
 The aim of this repository is to propose an up-to-date correspondance between latin and vernacular french names for as many taxa as possible. This is used for the [french version of the Lifemap Explorer of the tree of Life](http://lifemap-fr.univ-lyon1.fr)
 
 # Dataset produced
-Using the three data sources listed below (GBIF, INPN and wikidata), we recover vernacular names for 140 538 distinct taxa. 
+Using the three data sources listed below (GBIF, INPN and wikidata), and the dedicated code `extract-taxo.py` we recover vernacular names for 140 538 distinct taxa. 
 
+The resulting tab-delimited file, `TAXONOMIC-VERNACULAR-FR.txt`, contains one vernacular name per taxa, so that taxa with multiple vernacular names are present multiple times. This file contains 209 313 rows.
 
 # Data sources and retrieval strategies
 
@@ -34,6 +35,9 @@ SELECT DISTINCT ?sci ?comm WHERE {
 The downloaded result (tsv format) is called `query.tsv`
 > Vernacular names for 18 955 taxa (April 20th, 2020)
 
+- data was modified as follows: 
+    + Duplicates with other databases were removed. The version with more uppercase letters was always prefered. 
+
 **2. GBIF**
 
 
@@ -44,6 +48,8 @@ The important files here are `VernacularName.tsv` and `Taxon.tsv`
 
 > Vernacular names for 33 359 taxa (April 20th, 2020)
 
+- data was modified as follows: 
+    + Duplicates with other databases were removed. The version with more uppercase letters was always prefered. 
 
 **3. INPN**
 
@@ -54,6 +60,14 @@ The important file here is `TAXREFvXX.txt` where XX is the current version.
 
 > Vernacular names for 114 193 taxa (April 20th, 2020; TAXREFv13)
 
+- data was modified as follows: 
+    + Articles (Le, La, L') were removed
+    + Duplicates with other databases were removed. The version with more uppercase letters was always prefered. 
 
+# Contributions 
+If you think that some important data sources should be added, please open an issue, indicating the resource you have in mind, and I will try to integrate it. Please note the GBIF ans INPN are already combining data from a variety of sources. 
+For questions, remarks, or if you want to help and contribute, please send me an email or open an issue. 
 
+# Citation 
+If you use this dataset, please cite the paper presenting Lifemap: 
 
