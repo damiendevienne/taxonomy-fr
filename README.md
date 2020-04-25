@@ -64,8 +64,21 @@ The important file here is `TAXREFvXX.txt` where XX is the current version.
     + Articles (Le, La, L') were removed
     + Duplicates with other databases were removed. The version with more uppercase letters was always prefered. 
 
+# Ambiguities
+Of course, nothing is always simple, and some ambiguities exist because some taxa that are at distant in the tree of life have the same name. The most famous example is a genera of inscects that is called... __Bacteria__.  
+
+Other example : 
+- __Arenaria__ : genus of birds (Family: __Scolopacidae__) and genus of flower (Family: Caryophylaceae). The latter is called "Sablines" in french.
+
 # Contributions 
-If you think that some important data sources should be added, please open an issue, indicating the resource you have in mind, and I will try to integrate it. Please note the GBIF ans INPN are already combining data from a variety of sources. 
+If you think that some important data sources should be added, please open an issue indicating the resource you have in mind, and I will try to integrate it.
+
+If you identify errors in the french names, please open an issue.  
+
+
+Please note the GBIF ans INPN are already combining data from a variety of sources. 
+
+
 For questions, remarks, or if you want to help and contribute, please send me an email or open an issue. 
 
 # Citation 
